@@ -1,6 +1,7 @@
 <template>
   <article class="picture">
-    <h2 class="img-src">{{ image.src }}</h2>
+    <h2 class="image-title">{{ image.src }}</h2>
+    <img class="image-img" :src="image.src" alt="" />
   </article>
 </template>
 
@@ -17,8 +18,7 @@ export default {
 
 <style scoped>
 .picture {
-  width: 460px;
-  height: 400px;
+  width: 403px;
   border: 1px solid black;
   background-color: white;
   box-shadow: 2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -27,8 +27,13 @@ export default {
   padding: 10px;
 }
 
-.picture h2 {
+.picture .image-title {
   margin: 0;
+  margin-bottom: 10px;
+}
+
+.picture .image-img {
+  max-width: 100%;
 }
 
 .img-src {
