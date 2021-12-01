@@ -6,6 +6,9 @@
       :src="image.src"
       width="403"
       height="302"
+      format="webp"
+      quality="20"
+      :modifiers="{ grayscale: true, tint: '#00DC82' }"
       alt=""
     />
   </article>
