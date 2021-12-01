@@ -1,7 +1,13 @@
 <template>
   <article class="picture">
     <h2 class="image-title">{{ image.src }}</h2>
-    <img class="image-img" :src="image.src" width="403" height="302" alt="" />
+    <nuxt-img
+      class="image-img"
+      :src="image.src"
+      width="403"
+      height="302"
+      alt=""
+    />
   </article>
 </template>
 
